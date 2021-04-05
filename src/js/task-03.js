@@ -19,7 +19,7 @@ const images = [
 const listEl = document.querySelector('#gallery');
 
 const makeListMarkup = image => {
-    return `<li class = "gallery-item"><img сlass="image" src="${image.url}" alt="${image.alt}" width="300px" /></li>`;
+    return `<li class="gallery-item"><img сlass="image" src="${image.url}" alt="${image.alt}" width="300px" /></li>`;
 };
  
 const makeList = images.map(makeListMarkup).join('');

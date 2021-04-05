@@ -4,14 +4,18 @@ const ref = {
     incrementBtn: document.querySelector('[data-action="increment"]')
 }
 
+let counterValue = Number(ref.valueEl.textContent)
+
 ref.decrementBtn.addEventListener('click', onDecreaseValue);
 
 function onDecreaseValue() {
-   return ref.valueEl.textContent = Number(ref.valueEl.textContent) - 1;
+    counterValue -= 1;
+    ref.valueEl.textContent = counterValue;
 };
 
 ref.incrementBtn.addEventListener('click', onIncreaseValue);
 
 function onIncreaseValue() {
-    return ref.valueEl.textContent = Number(ref.valueEl.textContent) + 1;
+    counterValue += 1;
+    ref.valueEl.textContent = counterValue;
 };
