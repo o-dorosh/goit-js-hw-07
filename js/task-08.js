@@ -18,7 +18,7 @@ function createBoxes(amount) {
         return Math.floor(Math.random() * Math.floor(max));
     }
     
-    for(let i = 0; i <= amount; i++) {
+    for(let i = 0; i <= amount - 1; i++) {
         let color = `rgb(${getRandomInt(255)}, ${getRandomInt(255)}, ${getRandomInt(255)})`;
         els = els + `<div style="background-color: ${color}; width: ${30+i*10}px; height: ${30+i*10}px"></div>`;
     }

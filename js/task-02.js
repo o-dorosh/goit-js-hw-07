@@ -10,14 +10,12 @@ const ingredients = [
   const listEl = document.querySelector('#ingredients');
 
   const makeElements = options => {
-    const els = options.map(option => {
+    return options.map(option => {
         const element = document.createElement('li');
         element.textContent = option;
   
         return element
       });
-  
-      return els;
   }
 
   const el = makeElements(ingredients);
